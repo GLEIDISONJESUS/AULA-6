@@ -18,12 +18,22 @@ public class AULA6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         
-        Scanner sc = new Scanner(System.in);     
-        System.out.print("Digite o email ");
-        sc.nextLine();        
-        System.out.print("Digite a senha ");
-        sc.nextLine();
+        //Ativar a entrada de dados pelo usuário// 
+        Scanner sc = new Scanner(System.in); 
+        
+        //Solicitar ao usuário//
+        System.out.print("Digite o email: ");
+        //Dados são gravados na variaveis//
+        USUARIO.email = sc.nextLine(); 
+        
+        //Solicitar ao usuário//
+        System.out.print("Digite a senha: ");
+        //Dados são gravados na variaveis//
+        USUARIO.senha =sc.nextLine();
+        
+        //Exibe os dados coletatos//
+        System.out.println("O email é: " + USUARIO.email);
+        System.out.println("O senha é: " + USUARIO.senha);
     }
     
 }
