@@ -10,7 +10,8 @@ package aula.pkg6;
  * @author Aluno20
  */
 public class USUARIO {
-   static String email;
-   static String senha;
-    
+    //variaveis gerais//
+    String email;
+    String senha;
+    String nome;
 }
