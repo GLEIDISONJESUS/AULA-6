@@ -17,7 +17,6 @@ public class AULA6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         //Ativar a entrada de dados pelo usuário// 
         Scanner sc = new Scanner(System.in);
         
@@ -25,6 +24,12 @@ public class AULA6 {
         USUARIO u1 = new USUARIO();
         USUARIO u2 = new USUARIO();
         USUARIO u3 = new USUARIO();
+        
+        //Verificação de igualdade - senha//
+        boolean senh;
+        
+                
+        //-----------------U1----------------------//
         
         //Solicitar ao usuário//
         System.out.print("Digite o email: ");
@@ -36,15 +41,21 @@ public class AULA6 {
         //Dados são gravados na variaveis//
         u1.senha =sc.nextLine();
         
+         //Solicitar ao usuário//
+        System.out.print("Confirme a senha: ");
+        //Dados são gravados na variaveis//
+        u1.confirmacaosenha = sc.nextLine();
+        senh = u1.senha.equals(u1.confirmacaosenha);
+        System.out.println("A senha confere " + senh);
+                
         //Solicitar ao usuário//
         System.out.print("Digite seu nome: ");
         //Dados são gravados na variaveis//
         u1.nome =sc.nextLine();
         System.out.println("");
+               
         
-       
-        
-        //----------------------------------------//
+        //-----------------U2----------------------//
              //Solicitar ao usuário//
         System.out.print("Digite o email: ");
         //Dados são gravados na variaveis//
@@ -55,6 +66,14 @@ public class AULA6 {
         //Dados são gravados na variaveis//
         u2.senha =sc.nextLine();
         
+         //Solicitar ao usuário//
+        System.out.print("Confirme a senha: ");
+        //Dados são gravados na variaveis//
+        u2.confirmacaosenha = sc.nextLine();
+        senh = u2.senha.equals(u2.confirmacaosenha);
+        System.out.println("A senha confere " + senh);
+        
+        
         //Solicitar ao usuário//
         System.out.print("Digite seu nome: ");
         //Dados são gravados na variaveis//
@@ -62,7 +81,7 @@ public class AULA6 {
         System.out.println("");
         
         
-    //----------------------------------------//
+    //------------------U3----------------------//
              //Solicitar ao usuário//
         System.out.print("Digite o email: ");
         //Dados são gravados na variaveis//
@@ -73,27 +92,36 @@ public class AULA6 {
         //Dados são gravados na variaveis//
         u3.senha =sc.nextLine();
         
+         //Solicitar ao usuário//
+        System.out.print("Confirme a senha: ");
+        //Dados são gravados na variaveis//
+        u3.confirmacaosenha = sc.nextLine();
+        senh = u3.senha.equals(u3.confirmacaosenha);
+        System.out.println("A senha confere " + senh);
+        
+       
+        
         //Solicitar ao usuário//
         System.out.print("Digite seu nome: ");
         //Dados são gravados na variaveis//
-        u3.nome =sc.nextLine();
+        u3.nome = sc.nextLine();
         System.out.println("------------------------");
         
-        //-----------------------------//
         
-         //Exibe os dados coletatos//
+        //------Exibe os dados coletatos-------------//        
+         //u1//
         System.out.println("O email é: " + u1.email);
         System.out.println("O senha é: " + u1.senha);
-        System.out.println("O nome é " + u1.nome);
+        System.out.println("O nome é " + u1.nome);        
         System.out.println("");
         
-        //Exibe os dados coletatos//
+        //u2//
         System.out.println("O email é: " + u2.email);
         System.out.println("O senha é: " + u2.senha);
         System.out.println("O nome é " + u2.nome);
         System.out.println("");
         
-        //Exibe os dados coletatos//
+        //u3//
         System.out.println("O email é: " + u3.email);
         System.out.println("O senha é: " + u3.senha);
         System.out.println("O nome é " + u3.nome);

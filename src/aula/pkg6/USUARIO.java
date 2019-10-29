@@ -13,5 +13,6 @@ public class USUARIO {
     //variaveis gerais//
     String email;
     String senha;
+    String confirmacaosenha;
     String nome;
 }
