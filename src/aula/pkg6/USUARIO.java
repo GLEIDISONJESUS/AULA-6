@@ -14,5 +14,6 @@ public class USUARIO {
     String email;
     String senha;
     String confirmacaosenha;
+    String confirma2senha;
     String nome;
 }

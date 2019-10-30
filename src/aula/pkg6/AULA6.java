@@ -41,12 +41,27 @@ public class AULA6 {
         //Dados são gravados na variaveis//
         u1.senha =sc.nextLine();
         
-         //Solicitar ao usuário//
+        //Solicitar ao usuário//
         System.out.print("Confirme a senha: ");
         //Dados são gravados na variaveis//
         u1.confirmacaosenha = sc.nextLine();
-        senh = u1.senha.equals(u1.confirmacaosenha);
-        System.out.println("A senha confere " + senh);
+        
+        //-----Verificação de senha pelo (SE ENTAO)-------//
+        if (u1.senha.equals(u1.confirmacaosenha)){
+            System.out.println("A senha confere");
+        }else  {
+            System.out.println("A senha não confere");
+            
+         //Conferencia da segunda senha
+        System.out.print("Digite novamente a senha: ");
+        u1.confirma2senha = sc.nextLine();
+        senh = u1.senha.equals(u1.confirma2senha);
+        System.out.println("Senha conferida " + senh);   
+            
+        }
+        
+        
+                
                 
         //Solicitar ao usuário//
         System.out.print("Digite seu nome: ");
